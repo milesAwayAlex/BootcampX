@@ -1,0 +1,6 @@
+SELECT DAY,
+  COUNT(id)
+FROM assignments
+GROUP BY DAY
+HAVING COUNT(id) >= 10
+ORDER BY DAY;
